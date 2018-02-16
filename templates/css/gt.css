@@ -1,0 +1,38 @@
+/* GoogleTagged begins */
+a.googletag
+{
+   color: #003399;
+}
+   
+a.googletagged
+{
+   color: #336699;
+}
+dl.settings_gt
+{
+	width: 98%;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+dl.settings_gt dt
+{
+	float: left;
+	width: 30%;
+}
+dl.settings_gt dd
+{
+	width: 18%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+dl.settings_gt dt.settings_title
+{
+	width: 100%;
+	float: none;
+	margin: 0 0 10px 0;
+	padding: 5px 0 0 0;
+	font-weight: bold;
+	clear: both;
+}
+/* GoogleTagged ends */

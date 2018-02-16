@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>[n3rve]:google-tagged</id>
+	<name>Google Tagged</name>
+	<type>modification</type>
+	<version>2.1</version>
+	
+	<install for="2.0.*">
+		<redirect url="?action=admin;area=modsettings;sa=googletagged">redirect.txt</redirect>
+		<readme parsebbc="true">readme.txt</readme>
+		<modification type="file">googletagged.xml</modification>
+		<require-file name="sources/GoogleTagged.php" destination="$sourcedir" />
+		<require-file name="sources/GoogleTagged-Integrate.php" destination="$sourcedir" />
+		<require-file name="templates/GoogleTagged.template.php" destination="$themedir" />
+		<require-file name="templates/css/gt.css" destination="$themedir/css" />
+		<require-file name="languages/GoogleTagged.english.php" destination="$themedir/languages" />
+		<require-file name="languages/GoogleTagged.english-utf8.php" destination="$themedir/languages" />
+		<require-file name="languages/GoogleTagged.turkish.php" destination="$themedir/languages" />
+		<require-file name="languages/GoogleTagged.turkish-utf8.php" destination="$themedir/languages" />
+		<code>install.php</code>
+	</install>
+	
+	<uninstall for="2.0.*">
+		<modification type="file" reverse="true">googletagged.xml</modification>
+		<remove-file name="$sourcedir/GoogleTagged.php" />
+		<remove-file name="$sourcedir/GoogleTagged-Integrate.php" />
+		<remove-file name="$themedir/GoogleTagged.template.php" />
+		<remove-file name="$themedir/css/gt.css" />
+		<remove-file name="$themedir/languages/GoogleTagged.english.php" />
+		<remove-file name="$themedir/languages/GoogleTagged.english-utf8.php" />
+		<remove-file name="$themedir/languages/GoogleTagged.turkish.php" />
+		<remove-file name="$themedir/languages/GoogleTagged.turkish-utf8.php" />
+		<code>uninstall.php</code>
+	</uninstall>
+	
+</package-info>
